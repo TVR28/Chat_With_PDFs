@@ -35,7 +35,7 @@ def get_text_chunks(text):
 def get_vector_store(text_chunks):
     embeddings = GoogleGenerativeAIEmbeddings(model = "models/embedding-001") #model
     vector_store = FAISS.from_texts(text_chunks, embedding=embeddings) #Embedding the text chunks to create vector store
-    vector_store.save_local("faiss_index") #saving the vectors to local dir 
+    vector_store.save_local("faiss_index") #saving the vectors to local directory
 
 
 def get_conversational_chain():
@@ -52,7 +52,7 @@ def get_conversational_chain():
     model = ChatGoogleGenerativeAI(model="gemini-pro",temperature=0.3)
 
     prompt = PromptTemplate(template = prompt_template, input_variables = ["context", "question"])
-    chain = load_qa_chain(model, chain_type="stuff", prompt=prompt) #to do internal tet summarization
+    chain = load_qa_chain(model, chain_type="stuff", prompt=prompt) #to do internal text summarization
 
     return chain
 
