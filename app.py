@@ -1,3 +1,4 @@
+#Importing all Libraries
 import streamlit as st
 from PyPDF2 import PdfReader #To read pdfs
 from langchain.text_splitter import RecursiveCharacterTextSplitter 
