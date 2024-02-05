@@ -11,6 +11,7 @@ from langchain.prompts import PromptTemplate
 from dotenv import load_dotenv
 import os
 
+#Loading the google gemini pro api
 load_dotenv()
 os.getenv("GOOGLE_API_KEY")
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
