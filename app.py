@@ -78,8 +78,8 @@ def user_input(user_question):
 
 
 def main():
-    st.set_page_config("ResearchBuddy !")
-    st.header("Ask Questions And Chat With Your Research Papers")
+    st.set_page_config("Chat WIth PDFs !")
+    st.header("Ask Questions And Chat With Your PDfs")
 
     user_question = st.text_input("Ask Questions Based On The Research Papers")
 
