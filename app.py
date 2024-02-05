@@ -33,7 +33,7 @@ def get_text_chunks(text):
 
 #Convert chunks into vectors
 def get_vector_store(text_chunks):
-    embeddings = GoogleGenerativeAIEmbeddings(model = "models/embedding-001") 
+    embeddings = GoogleGenerativeAIEmbeddings(model = "models/embedding-001") #model
     vector_store = FAISS.from_texts(text_chunks, embedding=embeddings) #Embedding the text chunks to create vector store
     vector_store.save_local("faiss_index") #saving the vectors to local dir 
 
