@@ -3,7 +3,7 @@ import streamlit as st
 from PyPDF2 import PdfReader #To read pdfs
 from langchain.text_splitter import RecursiveCharacterTextSplitter #to split
 from langchain_google_genai import GoogleGenerativeAIEmbeddings #Googles Embedding Technique
-import google.generativeai as genai #to interact
+import google.generativeai as genai #to interact with
 from langchain.vectorstores import FAISS #For Vector Embeddings
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.chains.question_answering import load_qa_chain
