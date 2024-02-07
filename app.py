@@ -1,7 +1,7 @@
 #Importing all required Libraries
 import streamlit as st
 from PyPDF2 import PdfReader #To read pdfs
-from langchain.text_splitter import RecursiveCharacterTextSplitter 
+from langchain.text_splitter import RecursiveCharacterTextSplitter #to split
 from langchain_google_genai import GoogleGenerativeAIEmbeddings #Googles Embedding Technique
 import google.generativeai as genai
 from langchain.vectorstores import FAISS #For Vector Embeddings
