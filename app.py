@@ -8,8 +8,8 @@ from langchain.vectorstores import FAISS #For Vector Embeddings
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.chains.question_answering import load_qa_chain
 from langchain.prompts import PromptTemplate
-from dotenv import load_dotenv
-import os
+from dotenv import load_dotenv #to load the key
+import os 
 
 #Loading the google gemini pro api
 load_dotenv()
